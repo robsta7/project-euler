@@ -1,15 +1,15 @@
 #include "solutions.h"
 
-int task1(int value)
+size_t task1(size_t value)
 {
     value -= 1;
-    int a { arithmetic_progression_sum(3, 3, value / 3) };
-    int b { arithmetic_progression_sum(5, 5, value / 5) };
-    int c { arithmetic_progression_sum(15, 15, value / 15) };
+    size_t a { arithmetic_progression_sum(3, 3, value / 3) };
+    size_t b { arithmetic_progression_sum(5, 5, value / 5) };
+    size_t c { arithmetic_progression_sum(15, 15, value / 15) };
     return  a + b - c;
 }
 
-int arithmetic_progression_sum(int a, int d, int n)
+size_t arithmetic_progression_sum(size_t a, size_t d, size_t n)
 {
     return n > 0 ? (2 * a + d * (n - 1)) * n / 2 : 0;
 }
