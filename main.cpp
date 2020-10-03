@@ -10,9 +10,9 @@ int main(int argc, const char * argv[])
     assert(even_fibonacci_numbers(3000) == 3382);
     assert(even_fibonacci_numbers(4000000) == 4613732);
 
-    assert(task3(6783) == 19);
-    assert(task3(10013) == 31);
-    assert(task3(13195) == 29);
+    assert(largest_prime_factor(6783) == 19);
+    assert(largest_prime_factor(10013) == 31);
+    assert(largest_prime_factor(13195) == 29);
 
     return 0;
 }

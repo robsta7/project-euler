@@ -43,7 +43,7 @@ size_t even_fibonacci_numbers(size_t value)
     return answer;
 }
 
-long long task3(long long value)
+long long largest_prime_factor(long long value)
 {
     long long div { 2 };
     while (div * div < value)
