@@ -8,6 +8,7 @@ int main(int argc, const char * argv[])
     assert(task2(50) == 44);
     assert(task2(700) == 798);
     assert(task2(3000) == 3382);
+    assert(task2(4000000) == 4613732);
 
     return 0;
 }
