@@ -14,7 +14,7 @@ size_t arithmetic_progression_sum(size_t a, size_t d, size_t n)
     return n != 0 ? (2 * a + d * (n - 1)) * n / 2 : 0;
 }
 
-size_t task2(size_t value)
+size_t even_fibonacci_numbers(size_t value)
 {
     size_t answer { 0 };
 
