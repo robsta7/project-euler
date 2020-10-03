@@ -3,9 +3,9 @@
 int task1(int value)
 {
     value -= 1;
-    int a { arithmetic_progression_sum(3, 3, value/3) };
-    int b { arithmetic_progression_sum(5, 5, value/5) };
-    int c { arithmetic_progression_sum(15, 15, value/15) };
+    int a { arithmetic_progression_sum(3, 3, value / 3) };
+    int b { arithmetic_progression_sum(5, 5, value / 5) };
+    int c { arithmetic_progression_sum(15, 15, value / 15) };
     return  a + b - c;
 }
 
