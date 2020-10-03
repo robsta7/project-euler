@@ -21,10 +21,11 @@ size_t task2(size_t value)
     // Fact: every third Fibonacci number is even.
 
     // F_{n+3} =
-    // = 2 * F_{n+1} + F_{n} = 3 * F_{n} + 2 * F_{n-1} =
+    // = 2 * F_{n+1} + F_{n} =
+    // = 3 * F_{n} + 2 * F_{n-1} =
     // = 3 * F_{n} + F_{n-1} + F_{n-1} =
     // = 3 * F_{n} + (F_{n-1} + F_{n-2}) + F_{n-3} =
-    // = ... = 4 * F_{n} + F_{n-3}
+    // = 4 * F_{n} + F_{n-3}
 
     // F_{n+3} = 4 * F_{n} + F_{n-3}
 
