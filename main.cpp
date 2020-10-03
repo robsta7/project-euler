@@ -3,7 +3,7 @@
 
 int main(int argc, const char * argv[])
 {
-    assert(task1(10) == 23);
+    assert(multiples_of_3_and_5(10) == 23);
 
     assert(task2(50) == 44);
     assert(task2(700) == 798);
