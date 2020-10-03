@@ -12,4 +12,7 @@ size_t arithmetic_progression_sum(size_t a, size_t d, size_t n);
 /// Returns the sum of all even elements of the Fibonacci series that do not exceed 'value'.
 size_t task2(size_t value);
 
+/// Returns largest prime divisor of 'value'.
+long long task3(long long value);
+
 #endif /* PROJECT_EULER_SOLUTIONS_H */

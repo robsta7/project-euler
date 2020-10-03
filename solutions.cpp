@@ -41,3 +41,15 @@ size_t task2(size_t value)
 
     return answer;
 }
+
+long long task3(long long value)
+{
+    long long div { 2 };
+    while (div * div < value)
+    {
+        while (value % div == 0)
+            value /= div;
+        div += 1;
+    }
+    return value;
+}
