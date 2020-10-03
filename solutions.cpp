@@ -28,20 +28,15 @@ size_t task2(size_t value)
 
     // F_{n+3} = 4 * F_{n} + F_{n-3}
 
-    size_t a0 { 0 };
-    size_t a1 { 1 };
-    size_t a2 { 1 };
-    size_t a3 { 2 };
+    size_t firstEven { 0 };
+    size_t secondEven { 2 };
 
-    size_t currentEven { 2 };
-
-    while (currentEven < value)
+    while (secondEven < value)
     {
-        answer += currentEven;
-        currentEven += 4 * a3 + a0;
-        a3 += a2 + a1;
-        a0 = a1;
-        a1 = a2;
+        answer += secondEven;
+        size_t newFirstEven { secondEven };
+        secondEven = 4 * secondEven + firstEven;
+        firstEven = newFirstEven;
     }
 
     return answer;
