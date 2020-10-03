@@ -3,7 +3,7 @@
 
 #include <cstddef>
 
-/// Returns the sum of all numbers less than 'value' multiples of 3 or 5.
+/// Returns the sum of all the multiples of 3 or 5 below 'value'.
 size_t multiples_of_3_and_5(size_t value);
 
 /// Returns the sum of an arithmetic progression.
