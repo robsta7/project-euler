@@ -1,4 +1,8 @@
 #include "solutions.h"
+#include <string>
+
+using std::string;
+using std::to_string;
 
 size_t multiples_of_3_and_5(size_t value)
 {
@@ -53,4 +57,27 @@ long long largest_prime_factor(long long value)
         div += 1;
     }
     return value;
+}
+
+bool is_palindrome(size_t n)
+{
+    string s = to_string(n);
+    size_t size = s.length();
+    for (size_t i = 0; i < size / 2; i++)
+        if (s[i] != s[size - i - 1])
+            return false;
+    return true;
+}
+
+size_t largest_palindrome_product()
+{
+    size_t max { 0 };
+    for (size_t i = 999; i >= 100; i--)
+        for (size_t j = 999; j >= 100; j--)
+        {
+            size_t p = i * j;
+            if (is_palindrome(p) && p > max)
+                max = p;
+        }
+    return max;
 }
