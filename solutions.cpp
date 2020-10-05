@@ -1,8 +1,4 @@
 #include "solutions.h"
-#include <string>
-
-using std::string;
-using std::to_string;
 
 size_t multiples_of_3_and_5(size_t value)
 {
