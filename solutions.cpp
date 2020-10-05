@@ -50,7 +50,7 @@ long long largest_prime_factor(long long value)
     {
         while (value % div == 0)
             value /= div;
-        div += 1;
+        ++div;
     }
     return value;
 }
