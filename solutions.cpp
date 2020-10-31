@@ -13,13 +13,24 @@ size_t ap_sum(size_t a, size_t d, size_t n)
 
 size_t even_fibonacci_numbers(size_t value)
 {
-    size_t answer { 0 };
-    size_t firstEven { 0 };
-    size_t secondEven { 2 };
+    // Fact: every third Fibonacci number is even.
+
+    // F_{n+3} =
+    // = 2 * F_{n+1} + F_{n} =
+    // = 3 * F_{n} + 2 * F_{n-1} =
+    // = 3 * F_{n} + F_{n-1} + F_{n-1} =
+    // = 3 * F_{n} + (F_{n-1} + F_{n-2}) + F_{n-3} =
+    // = 4 * F_{n} + F_{n-3}
+    
+    // F_{n+3} = 4 * F_{n} + F_{n-3}
+
+    size_t answer = 0;
+    size_t firstEven = 0;
+    size_t secondEven = 2;
     while (secondEven < value)
     {
         answer += secondEven;
-        size_t newFirstEven { secondEven };
+        size_t newFirstEven = secondEven;
         secondEven = 4 * secondEven + firstEven;
         firstEven = newFirstEven;
     }
